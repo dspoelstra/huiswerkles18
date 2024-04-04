@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(images/groningen.avif);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+#facts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    flex: 1;
+    width: auto;
+}
+
+.right-column {
+    flex: 2;
+    width: auto;
+    background-color: lightgray;
+}
+
+
+.article {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .left-column {
+        flex: 1;
+        width: auto;
+    }
+
+    .right-column {
+        flex: 2;
+        width: auto;
+    }
+}

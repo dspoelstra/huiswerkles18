@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-image: url(images/groningen.avif);
+    background-image: url/groningen.avif);
     background-size: cover;
     color: rgb(255, 255, 255);
     text-align: center;

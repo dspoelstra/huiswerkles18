@@ -2,15 +2,24 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color:rgb(247, 255, 255);
 }
 
 header {
-    background-image: url/("groningen.avif");
-    background-size: cover;
+    background-image: url(images/reitdiep.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
     color: rgb(255, 255, 255);
     text-align: center;
-    text-color: black;
     padding: 20px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 8vw;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 main {
@@ -30,23 +39,50 @@ main {
 .right-column {
     flex: 2;
     width: auto;
-    background-color: lightgray;
+    background-color: #f7e8c6;
 }
 
-
-.article {
+.article1 {
     padding: 20px;
     margin-bottom: 20px;
+    flex: 1; /* Makes it flexible */
 }
 
-@media screen and (min-width: 768px) {
-    .left-column {
-        flex: 1;
+.article2 {
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1; /* Makes it flexible */
+}
+
+.img-toren, .img-forum {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 200px; /* Set a fixed width for the images */
+    flex: 1;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the start of the container */
+}
+
+@media screen and (max-width: 480px) {
+    .article1, .article2 {
+        flex: none;
         width: auto;
     }
 
-    .right-column {
-        flex: 2;
+    .img-toren, .img-forum {
+        flex: none;
         width: auto;
+        display: block;
+        margin: 0 auto;
     }
 }
